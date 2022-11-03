@@ -9,16 +9,19 @@ import java.util.Scanner;
 
 public class CircleDemo {
     public static void main(String[] args) {
-        System.out.println("数组大小：");
+        System.out.print("请输入数组大小：");
         Scanner scanner = new Scanner(System.in);
         int maxSize = scanner.nextInt();
         Circle circle = new Circle(maxSize);
         boolean run = true;
         while (run) {
+            System.out.println("a->向数组添加元素");
+            System.out.println("g->从数组头部元素");
+            System.out.println("s->展示数组");
             char c = scanner.next().charAt(0);
             switch (c) {
                 case 'a':
-                    System.out.println("请输入数值：");
+                    System.out.print("请输入数值：");
                     int i = scanner.nextInt();
                     circle.add(i);
                     break;
