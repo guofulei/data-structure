@@ -40,17 +40,6 @@ public class LinkedDemo {
 
 
         }
-
-//        linkedList.addToLinkedOrderBy(3);
-//        linkedList.addToLinkedOrderBy(2);
-//        linkedList.addToLinkedOrderBy(4);
-//        linkedList.addToLinkedOrderBy(1);
-//        linkedList.addToLinkedOrderBy(5);
-//        linkedList.addToLinked(3);
-//        linkedList.addToLinked(2);
-//        linkedList.addToLinked(4);
-//        linkedList.addToLinked(1);
-//        linkedList.addToLinked(5);
         linkedList.showLinked();
     }
 }
@@ -89,7 +78,7 @@ class LinkedList{
                 break;
             }
             if (temp.no==no){
-                throw new RuntimeException("该需要已存在无法添加");
+                throw new RuntimeException("该no已存在无法添加");
             }
             temp=temp.nextNode;
         }
