@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 /**
  * 链表
- *
  * @guofulei24
  */
 public class LinkedDemo {
@@ -19,6 +18,8 @@ public class LinkedDemo {
             System.out.println("o->向链表添加元素并排序");
             System.out.println("s->展示链表");
             System.out.println("r->移除链表中某个元素");
+            System.out.println("l->获取链表倒是第k个元素");
+            System.out.println("g->获取链表长度");
             System.out.print("请输入你的选择：");
             char c = scanner.next().charAt(0);
             switch (c){
@@ -40,6 +41,13 @@ public class LinkedDemo {
                     int n = scanner.nextInt();
                     linkedList.removeNode(n);
                     break;
+                case 'l':
+                    System.out.print("请输入number:");
+                    int l = scanner.nextInt();
+                    linkedList.getLastIndexNode(l);
+                case 'g':
+                    int linkedLength = linkedList.getLinkedLength();
+                    System.out.println("链表长度为:"+linkedLength);
                 default:
                     break;
             }
@@ -119,6 +127,30 @@ class LinkedList{
             temp=temp.nextNode;
         }
     }
+
+    public int getLinkedLength(){
+        Linked temp=head.nextNode;
+        int i=0;
+        while (temp!=null){
+            i++;
+            temp=temp.nextNode;
+        }
+        return i;
+    }
+
+    public void getLastIndexNode(int index){
+        Linked temp=head.nextNode;
+        if (temp==null){
+            throw new RuntimeException("链表为空");
+        }else {
+            int linkedLength = getLinkedLength();
+            for (int i=0;i<linkedLength-index;i++){
+                temp=temp.nextNode;
+            }
+            System.out.println("倒是第"+index+"个节点值为"+temp.no);
+        }
+    }
+
 }
 
 class Linked {
