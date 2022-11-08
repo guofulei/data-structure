@@ -20,6 +20,7 @@ public class LinkedDemo {
             System.out.println("r->移除链表中某个元素");
             System.out.println("l->获取链表倒是第k个元素");
             System.out.println("g->获取链表长度");
+            System.out.println("f->反转链表");
             System.out.print("请输入你的选择：");
             char c = scanner.next().charAt(0);
             switch (c){
@@ -45,9 +46,14 @@ public class LinkedDemo {
                     System.out.print("请输入number:");
                     int l = scanner.nextInt();
                     linkedList.getLastIndexNode(l);
+                    break;
                 case 'g':
                     int linkedLength = linkedList.getLinkedLength();
                     System.out.println("链表长度为:"+linkedLength);
+                    break;
+                case 'f':
+                    linkedList.reversalLinked();
+                    break;
                 default:
                     break;
             }
@@ -148,6 +154,26 @@ class LinkedList{
                 temp=temp.nextNode;
             }
             System.out.println("倒是第"+index+"个节点值为"+temp.no);
+        }
+    }
+    
+    public void reversalLinked(){
+        if (head.nextNode==null && head.nextNode.nextNode==null){
+            System.out.println("反转后来的链表为：");
+            showLinked();
+        }else{
+            Linked temp=head.nextNode;
+            Linked next=null;
+            Linked newLinked=new Linked(0);
+            while (temp!=null){
+               next=temp.nextNode;
+               temp.nextNode=newLinked.nextNode;
+               newLinked.nextNode=temp;
+               temp=next;
+            }
+            head.nextNode=newLinked.nextNode;
+            System.out.println("反转后来的链表为：");
+            showLinked();
         }
     }
 
