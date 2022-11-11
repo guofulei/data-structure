@@ -21,6 +21,7 @@ public class LinkedDemo {
             System.out.println("l->获取链表倒是第k个元素");
             System.out.println("g->获取链表长度");
             System.out.println("f->反转链表");
+             System.out.println("h->合并两个有序链表");
             System.out.print("请输入你的选择：");
             char c = scanner.next().charAt(0);
             switch (c){
@@ -54,6 +55,23 @@ public class LinkedDemo {
                 case 'f':
                     linkedList.reversalLinked();
                     break;
+                case 'h':
+                    LinkedList linked1 = new LinkedList();
+                    linked1.addToLinked(1);
+                    linked1.addToLinked(3);
+                    linked1.addToLinked(5);
+                    Linked link1 = linked1.addToLinked(7);
+                    LinkedList linked2 = new LinkedList();
+                    linked2.addToLinked(2);
+                    linked2.addToLinked(4);
+                    linked2.addToLinked(6);
+                    Linked link2 = linked2.addToLinked(8);
+                    System.out.println("有序链表1:");
+                    linked1.showLinkedByLinked(link1);
+                    System.out.println("有序链表2:");
+                    linked2.showLinkedByLinked(link2);
+                    linked1.margeOrderlinessLinked(link1,link2);
+                    break;    
                 default:
                     break;
             }
@@ -174,6 +192,48 @@ class LinkedList{
             head.nextNode=newLinked.nextNode;
             System.out.println("反转后来的链表为：");
             showLinked();
+        }
+    }
+    
+    public void margeOrderlinessLinked(Linked l1,Linked l2){
+        if (l1.nextNode==null){
+            Linked temp=l2.nextNode;
+            while (temp!=null){
+                System.out.println("Lind:"+temp.no);
+                temp=temp.nextNode;
+            }
+        }
+        if (l2.nextNode==null){
+            Linked temp=l1.nextNode;
+            while (temp!=null){
+                System.out.println("Lind:"+temp.no);
+                temp=temp.nextNode;
+            }
+        }
+        Linked ll1=l1.nextNode;
+        Linked ll2=l2.nextNode;
+        Linked newLk = new Linked(0);
+        Linked temp=newLk;
+        while (ll1!=null && ll2!=null){
+            if (ll1.no<=ll2.no){
+                temp.nextNode=new Linked(ll1.no);
+                ll1=ll1.nextNode;
+            }else {
+                temp.nextNode=new Linked(ll2.no);
+                ll2=ll2.nextNode;
+            }
+            temp=temp.nextNode;
+        }
+        if (ll1!=null){
+            temp.nextNode=ll1;
+        }
+        if (ll2!=null){
+            temp.nextNode=ll2;
+        }
+        Linked tp=newLk;
+        while (tp!=null){
+            System.out.println("Link:"+tp.no);
+            tp=tp.nextNode;
         }
     }
 
