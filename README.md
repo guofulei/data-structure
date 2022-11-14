@@ -6,3 +6,7 @@
 
 <h3>链表</h3>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/LinkedDemo.java">环形数组</a> </br>
+
+<h3>字符串</h3>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/string/DoublePointerReversalStr.java">双指针反转字符串</a>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/string/EffectiveHeterotopicWords.java">是否为有效的字母异位词</a>
