@@ -3,7 +3,7 @@ package com.lee.circle;
 import java.util.Scanner;
 
 /**
- * 环形链表
+ * 环形数组
  * @guofulei24
  */
 
