@@ -2,7 +2,7 @@ package com.lee.linked;
 
 /**
  * 双链表
- * guofulei24
+ * @guofulei24
  */
 public class DoubleLinkedDemo {
     public static void main(String[] args) {
