@@ -4,7 +4,7 @@ package com.lee.linked;
 import java.util.Scanner;
 
 /**
- * 链表
+ * 单链表
  * @guofulei24
  */
 public class LinkedDemo {
