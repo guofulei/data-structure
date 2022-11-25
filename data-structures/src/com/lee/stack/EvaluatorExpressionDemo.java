@@ -7,13 +7,14 @@ package com.lee.stack;
  */
 public class EvaluatorExpressionDemo {
     public static void main(String[] args) {
-        String expression = "2+3*6-2";
+        String expression = "97+9*6-2";
         StackArr stackArr1 = new StackArr(10);
         StackArr stackArr2 = new StackArr(10);
         int index = 0;
         int number1 = 0;
         int number2 = 0;
         char str;
+        String num = "";
         //编辑每个字符
         while (true) {
             str = expression.substring(index, index + 1).charAt(0);
@@ -28,6 +29,7 @@ public class EvaluatorExpressionDemo {
                         char s = (char) stackArr2.popStack();
                         int res = stackArr2.operation(number1, number2, s);
                         stackArr1.pushStack(res);
+                        stackArr2.pushStack(str);
                     } else {
                         //当前运算符大于运算符栈末的运算符
                         stackArr2.pushStack(str);
@@ -37,14 +39,25 @@ public class EvaluatorExpressionDemo {
                 }
             } else {
                 //否则就是数字
-                stackArr1.pushStack(str - 48);
+
+                num += str;
+                //连续数字
+                if (index == expression.length() - 1) {
+                    stackArr1.pushStack(Integer.parseInt(num));
+                } else if (stackArr1.isOperator(expression.substring(index + 1, index + 2).charAt(0))) {
+                    stackArr1.pushStack(Integer.parseInt(num));
+                    num = "";
+                }
             }
             index++;
             if (index == expression.length()) {
                 break;
             }
         }
-        while (!stackArr2.isEmpty()) {
+        while (true) {
+            if(stackArr2.isEmpty()){
+                break;
+            }
             number1 = stackArr1.popStack();
             number2 = stackArr1.popStack();
             char s = (char) stackArr2.popStack();
