@@ -82,10 +82,9 @@ public class InfixExpressionToSuffixExpressionDemo {
 class Priority {
     private static int ADD = 1;
     private static int SUBTRACT = 1;
-    private static int MULTIPLY = 1;
-    private static int DIVIDE = 1;
-    private static int LEFT = 0;
-
+    private static int MULTIPLY = 2;
+    private static int DIVIDE = 2;
+   
     public static int getValue(String s) {
         int res = 0;
         switch (s) {
@@ -100,9 +99,6 @@ class Priority {
                 break;
             case "/":
                 res = DIVIDE;
-                break;
-            case "(":
-                res = LEFT;
                 break;
             default:
                 break;
