@@ -34,5 +34,5 @@
   <li>front指向队列头部 默认0,end指向队列尾部 默认0</li>
   <li>队空的条件是end==front</li>
   <li>队满的条件是(end+1)%maxSize=0</li>
-  <li>队列有效元素个数(end+maxSize-front)%maxSize</li>
+  <li>队列有效元素个数表达式:(end+maxSize-front)%maxSize</li>
 </lu>
