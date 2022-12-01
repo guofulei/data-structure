@@ -11,6 +11,6 @@
   <li>遍历二维数组统计有效值的个数 sum</li>
   <li>创建稀疏数组sparsearray[sum+1][3]</li>
   <li>再次遍历二维数组,将有效值存入稀疏数组中</li>
-</ul></br>
+</ul>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/SparseArrayDemo.java">demo</a></br>
 注：稀疏数组第一行 存储的是二维数组的大小和有效值个数从第二行开始存储的是每个有效值的位置和大小 </br>
-<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/SparseArrayDemo.java">demo</a>
