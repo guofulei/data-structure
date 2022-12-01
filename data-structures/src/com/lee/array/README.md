@@ -27,3 +27,12 @@
   <li>最后肯定有一个队列有剩余元素,利用上面的索引取遍历数组,将他们添加到新队列即可</li>
 </ul>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/OrderArrayDemo.java">demo</a>
+<h3>环形队列</h3>
+<img src="https://user-images.githubusercontent.com/74183122/204996425-97fe56f7-26a7-43bc-8a3c-b728f6797ce2.png"/>
+<p>思路:</p>
+<ul>
+  <li>front指向队列头部 默认0,end指向队列尾部 默认0</li>
+  <li>队空的条件是end==front</li>
+  <li>队满的条件是(end+1)%maxSize=0</li>
+  <li>队列有效元素个数(end+maxSize-front)%maxSize</li>
+</lu>
