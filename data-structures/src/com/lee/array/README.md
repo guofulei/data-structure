@@ -26,3 +26,4 @@
   <li>如果b小于a,同上操作</li>
   <li>最后肯定有一个队列有剩余元素,利用上面的索引取遍历数组,将他们添加到新队列即可</li>
 </ul>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/OrderArrayDemo.java">demo</a>
