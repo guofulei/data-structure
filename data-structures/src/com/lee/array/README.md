@@ -14,3 +14,14 @@
 </ul>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/SparseArrayDemo.java">demo</a></br>
 注：稀疏数组第一行 存储的是二维数组的大小和有效值个数从第二行开始存储的是每个有效值的位置和大小 </br>
+<h3>合并两个有序数组</h3>
+<p>数组a:</p>
+<img src="https://user-images.githubusercontent.com/74183122/204986781-a10c332b-7d03-42d6-9bd1-7991911ac895.png"/>
+<p>数组b:</p>
+<img src="https://user-images.githubusercontent.com/74183122/204986789-48198f82-8d3d-4334-b8f4-c5b57c15ea45.png"/>
+<p>思路:</p>
+<ul>
+  <li>使用双指针的方法，把a,b数组看成队列</li>
+  <li>同时从a,b队列头部取出元素,如果a的元素小于b的元素,就将a的元素放到新队列中</li>
+  <li></li>
+</ul>
