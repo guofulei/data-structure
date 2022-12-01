@@ -1,5 +1,4 @@
 # data-structure 
-<h2>还在更新中......</h2>
 <h3>数组</h3>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/OrderArrayDemo.java">合并两个有序数组<a> </br>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/SparseArrayDemo.java">稀疏数组</a> </br>
@@ -19,4 +18,4 @@
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/stack/InfixExpressionToSuffixExpressionDemo.java">中缀表达式转后缀表达式</a> </br>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/stack/PostfixExpressionDemo.java">后缀表达式</a>
 
-
+<h2>还在更新中......</h2>
