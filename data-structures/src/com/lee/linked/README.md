@@ -24,4 +24,4 @@
   <li>把单例链表的最后一个元素的next指向head就形成了环形链表</li>
   <li>如果head的next==pre，链表只有一个node</li>
 </ul> 
-<a href="">demo</a>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/CircleLinkedDemo.java">demo</a>
