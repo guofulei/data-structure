@@ -25,3 +25,15 @@
   <li>如果head的next==pre，链表只有一个node</li>
 </ul> 
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/CircleLinkedDemo.java">demo</a>
+<h3>与瑟夫问题</h3>
+<div>
+<p> 问题描述：<p/>  
+    设编号为1，2，… n的n个人围坐一圈，约定编号为k（1<=k<=n）的人从1开始报数，数到m 的那个人出列，它的下一位又从1开始报数，数到m的那个人又出列，依次类推，直到所有人出列为止，由此产生一个出队编号的序列。
+</div>  
+<p>思路</p>
+<ul>
+  <li>声明一个辅助指针，将这个辅助指向链表的尾部</li>
+  <li>然后让head和辅助指针通知移动（k-1）次</li>
+  <li>循环（报数的人数-1）次出圈...</li>
+  <li>直到链表最后只省一个元素 循环结束 将链表最后一个取出 完成出圈</li>
+</ul>
