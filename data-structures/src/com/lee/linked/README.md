@@ -21,6 +21,7 @@
 <img src="https://user-images.githubusercontent.com/74183122/205253667-d91c8329-c884-498f-bee6-802cfc23e848.png"/>
 <p>结构</p>
 <ul>
-  <li>123</li>
-</ul>
+  <li>把单例链表的最后一个元素的next指向head就形成了环形链表</li>
+  <li>如果head的next==pre，链表只有一个node</li>
+</ul> 
 <a href="">demo</a>
