@@ -16,4 +16,4 @@
   <li>双向链表相较于单链表在每个node中会多一个pre，这个pre的作用和next类似，但他存储的是上一个node的物理位置</li>
   <li>双向链表head的pre为null，链表最后一个node的next为null</li>
 </ul>
-<a href="">demo</a>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/DoubleLinkedDemo.java">demo</a>
