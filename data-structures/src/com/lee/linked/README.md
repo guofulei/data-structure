@@ -25,7 +25,7 @@
   <li>如果head的next==pre，链表只有一个node</li>
 </ul> 
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/CircleLinkedDemo.java">demo</a>
-<h3>与瑟夫问题</h3>
+<h3>约瑟夫问题</h3>
 <div>
 <p> 问题描述：<p/>  
     设编号为1，2，… n的n个人围坐一圈，约定编号为k（1<=k<=n）的人从1开始报数，数到m 的那个人出列，它的下一位又从1开始报数，数到m的那个人又出列，依次类推，直到所有人出列为止，由此产生一个出队编号的序列。
