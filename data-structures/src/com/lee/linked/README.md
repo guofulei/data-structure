@@ -9,3 +9,10 @@
   <li>单链表最后一个节点的next一定是null</li>
 </ul>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/LinkedDemo.java">demo</a>
+<h3>双向链表</h3>
+<img src="https://user-images.githubusercontent.com/74183122/205246952-a548bb2d-4b88-440c-9e73-cc5bfbfb7c51.png"/>
+<p>结构</p>
+<ul>
+  <li>双向链表相较于单链表在每个node中会多一个pre，这个pre的作用和next类似，但他存储的是上一个node的物理位置</li>
+  <li>双向链表head的pre为null，链表最后一个node的next为null</li>
+</ul>
