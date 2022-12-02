@@ -29,6 +29,11 @@
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/array/OrderArrayDemo.java">demo</a>
 <h3>环形队列</h3>
 <img src="https://user-images.githubusercontent.com/74183122/204996425-97fe56f7-26a7-43bc-8a3c-b728f6797ce2.png"/>
+队空时状态:
+<img src="https://user-images.githubusercontent.com/74183122/205203016-74f3d172-41b7-40db-be4a-449d20304c28.png"/>
+队满时状态:
+<img src="https://user-images.githubusercontent.com/74183122/205203022-dc9e4052-fac7-4237-92e5-b0b0265161b7.png"/>
+
 <p>思路:</p>
 <ul>
   <li>front指向队列头部 默认0,end指向队列尾部 默认0</li>
