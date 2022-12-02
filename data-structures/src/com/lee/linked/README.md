@@ -17,3 +17,10 @@
   <li>双向链表head的pre为null，链表最后一个node的next为null</li>
 </ul>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/DoubleLinkedDemo.java">demo</a>
+<h3>环形链表</h3>
+<img src="https://user-images.githubusercontent.com/74183122/205253667-d91c8329-c884-498f-bee6-802cfc23e848.png"/>
+<p>结构</p>
+<ul>
+  <li>123</li>
+</ul>
+<a href="">demo</a>
