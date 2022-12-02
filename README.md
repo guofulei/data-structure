@@ -6,7 +6,7 @@
 
 <h3>链表</h3>
 <a href="https://github.com/guofulei/data-structure/tree/main/data-structures/src/com/lee/linked">单链表</a> </br>
-<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked">双链表</a> </br>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked">双向链表</a> </br>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked">环形链表</a>
 
 <h3>字符串</h3>
