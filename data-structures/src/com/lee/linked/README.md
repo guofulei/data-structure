@@ -7,4 +7,4 @@
   <li>单链表的node存储的是当前节点的数据</li>
   <li>上图可以看到单链表的各个节点的位置是连续的,但他们的物理位置其实是不连续的，每个node节点中的next存储的是他连接下一个节点的地址</li>
 </ul>
-<a href="">demo</a>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/linked/LinkedDemo.java">demo</a>
