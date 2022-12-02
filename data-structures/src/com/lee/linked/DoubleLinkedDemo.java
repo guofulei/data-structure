@@ -1,7 +1,7 @@
 package com.lee.linked;
 
 /**
- * 双链表
+ * 双向链表
  * @guofulei24
  */
 public class DoubleLinkedDemo {
