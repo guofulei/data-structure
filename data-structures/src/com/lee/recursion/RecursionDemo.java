@@ -1,5 +1,9 @@
 package com.lee.recursion;
 
+/**
+ * 递归回溯
+ * @guofulei24
+ */
 public class RecursionDemo {
     public static void main(String[] args) {
         int[][] arr = new int[7][8];
@@ -14,7 +18,8 @@ public class RecursionDemo {
         }
         arr[3][1] = 1;
         arr[3][2] = 1;
-        nextIsTrue(arr,1,1);
+        int count=0;
+        nextIsTrue(arr,1,1,count);
         for (int[] a : arr) {
             for (int b : a) {
                 System.out.print(b + " ");
@@ -23,23 +28,28 @@ public class RecursionDemo {
         }
     }
 
-    public static boolean nextIsTrue(int[][] arr, int i, int j) {
+    public static boolean nextIsTrue(int[][] arr, int i, int j,int count) {
         if (arr[5][6] == 2) {
             return true;
         } else {
             if (arr[i][j] == 0) {
                 arr[i][j] = 2;
                 //下 右 上 左
-                if (nextIsTrue(arr,i+1,j)) {
+                if (nextIsTrue(arr,i+1,j,count)) {
+                    count++;
                     return true;
-                } else if (nextIsTrue(arr,i,j+1)) {
+                } else if (nextIsTrue(arr,i,j+1,count)) {
+                    count++;
                     return  true;
-                } else if (nextIsTrue(arr,i-1,j)) {
+                } else if (nextIsTrue(arr,i-1,j,count)) {
+                    count++;
                     return true;
-                }else if(nextIsTrue(arr,i,j-1)){
+                }else if(nextIsTrue(arr,i,j-1,count)){
+                    count++;
                     return true;
                 }else {
                     arr[i][j]=3;
+                    count--;
                     return false;
                 }
             } else {
