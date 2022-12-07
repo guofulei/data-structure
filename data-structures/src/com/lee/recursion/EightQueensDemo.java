@@ -4,7 +4,6 @@ import javax.management.MXBean;
 
 /**
  * 八皇后问题
- *
  * @guofulei
  */
 public class EightQueensDemo {
