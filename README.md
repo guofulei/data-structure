@@ -23,7 +23,7 @@
 <a href="https://github.com/guofulei/data-structure/tree/main/data-structures/src/com/lee/time_complexity">时间复杂度</a>
 <h3>排序算法</h3>
 <a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/sort/BubbleSortDemo.java">冒泡排序</a></br>
-<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/sort/SelectSortDemo.java">选择排序</a>
-<a href="">插入排序</a>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/sort/SelectSortDemo.java">选择排序</a></br>
+<a href="https://github.com/guofulei/data-structure/blob/main/data-structures/src/com/lee/sort/InsertSortDemo.java">插入排序</a>
 <h2>还在更新中......</h2>
 
